@@ -1,0 +1,10 @@
+yfinance
+pandas
+pandas-ta
+tabulate
+numpy
+lxml
+requests
+anthropic
+vaderSentiment
+pydantic

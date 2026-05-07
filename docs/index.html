@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US Stock Screener — 2026-05-07 18:15 KST</title>
+<style>
+  :root {
+    --bg: #ffffff; --bg-card: #f8f9fa; --text: #212529;
+    --muted: #6c757d; --border: #dee2e6;
+    --pos: #2e7d32; --neg: #c62828; --neutral: #757575;
+    --accent: #1976d2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1a; --bg-card: #2a2a2a; --text: #e8e8e8;
+      --muted: #9ca3af; --border: #404040;
+      --pos: #66bb6a; --neg: #ef5350; --neutral: #9e9e9e;
+      --accent: #42a5f5;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    margin: 0; padding: 16px;
+    background: var(--bg); color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 980px; margin: 0 auto; }
+  header { margin-bottom: 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; }
+  h2 { font-size: 1.25rem; margin: 32px 0 12px;
+       border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table {
+    width: 100%; border-collapse: collapse;
+    background: var(--bg-card); border-radius: 8px; overflow: hidden;
+    font-size: 0.85rem; min-width: 580px;
+  }
+  th, td { padding: 10px 8px; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  th { background: var(--border); font-weight: 600; font-size: 0.8rem; }
+  tr:not(:last-child) td { border-bottom: 1px solid var(--border); }
+  td.ticker { font-weight: 700; color: var(--accent); font-size: 1rem; }
+  td small { color: var(--muted); }
+  .pos { color: var(--pos); font-weight: 600; }
+  .neg { color: var(--neg); font-weight: 600; }
+  .muted { color: var(--muted); }
+  .card {
+    background: var(--bg-card); padding: 16px 18px; margin: 14px 0;
+    border-radius: 8px; border-left: 4px solid var(--accent);
+  }
+  .card h3 { margin: 0 0 10px; display: flex; align-items: center;
+             flex-wrap: wrap; gap: 8px; font-size: 1.1rem; }
+  .card p { margin: 6px 0; }
+  .card ul { padding-left: 20px; margin: 6px 0; }
+  .card li { margin: 3px 0; }
+  .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 0.78rem; font-weight: 500;
+  }
+  .badge.pos { background: var(--pos); color: white; }
+  .badge.neg { background: var(--neg); color: white; }
+  .badge.neutral { background: var(--neutral); color: white; }
+  footer {
+    margin-top: 40px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.8rem;
+  }
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    h1 { font-size: 1.3rem; }
+    .card { padding: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>US Stock Screener</h1>
+    <div class="subtitle">최종 업데이트: 2026-05-07 18:15 KST</div>
+  </header>
+
+  <h2>스크리닝 결과 (상위 5)</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Score</th>
+          <th>Entry</th>
+          <th>Stop Loss</th>
+          <th>Take Profit</th>
+          <th>RSI</th>
+          <th>1M</th>
+          <th>3M</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td class="ticker">AVGO</td>
+        <td>27.1</td>
+        <td>$425.44</td>
+        <td class="neg">$398.11<br><small>(-6.4%)</small></td>
+        <td class="pos">$466.43<br><small>(+9.6%)</small></td>
+        <td>68</td>
+        <td class="pos">+21.3%</td>
+        <td class="pos">+37.3%</td>
+      </tr>
+
+      <tr>
+        <td class="ticker">NVDA</td>
+        <td>15.8</td>
+        <td>$207.83</td>
+        <td class="neg">$194.67<br><small>(-6.3%)</small></td>
+        <td class="pos">$227.56<br><small>(+9.5%)</small></td>
+        <td>61</td>
+        <td class="pos">+14.1%</td>
+        <td class="pos">+20.9%</td>
+      </tr>
+
+      <tr>
+        <td class="ticker">AAPL</td>
+        <td>9.4</td>
+        <td>$287.51</td>
+        <td class="neg">$274.16<br><small>(-4.6%)</small></td>
+        <td class="pos">$307.53<br><small>(+7.0%)</small></td>
+        <td>69</td>
+        <td class="pos">+11.1%</td>
+        <td class="pos">+4.3%</td>
+      </tr>
+
+      <tr>
+        <td class="ticker">WMT</td>
+        <td>6.4</td>
+        <td>$130.08</td>
+        <td class="neg">$124.97<br><small>(-3.9%)</small></td>
+        <td class="pos">$137.75<br><small>(+5.9%)</small></td>
+        <td>56</td>
+        <td class="pos">+2.2%</td>
+        <td class="pos">+2.7%</td>
+      </tr>
+
+      <tr>
+        <td class="ticker">LLY</td>
+        <td>2.9</td>
+        <td>$987.05</td>
+        <td class="neg">$926.16<br><small>(-6.2%)</small></td>
+        <td class="pos">$1078.39<br><small>(+9.3%)</small></td>
+        <td>61</td>
+        <td class="pos">+3.5%</td>
+        <td class="neg">-3.1%</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>뉴스 분석</h2>
+  
+    <div class="card">
+      <h3>AVGO
+        <span class="badge neutral">감성 +2/10 · 중립</span>
+      </h3>
+      <p>애널리스트 의견: <strong>강력 매수</strong> (42명)</p>
+      <p>애널리스트 평균 목표가: <strong>$475.49</strong> (상승여력 <span class='pos'>+11.8%</span>)</p>
+      <p><strong>최근 헤드라인:</strong></p><ul><li>The 1 Thing Tech Investors Aren&#x27;t Ready For -- but OpenAI Just Proved</li><li>Not Nvidia. Not Broadcom. Intel Is Going to Be the Biggest Winner of the Artificial Intelligence (AI) Inference Era.</li><li>Celestica (CLS) Announces Availability of 1.6TbE Switches for GenAI, ML Infrastructure</li><li>Apple, Nvidia, Broadcom And This Dow Retail Behemoth Fire Up Breakout Watch</li><li>Advanced Micro Devices Set to Command Half of Growing Server CPU Market, BofA Says</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>NVDA
+        <span class="badge neutral">감성 +0/10 · 중립</span>
+      </h3>
+      <p>애널리스트 의견: <strong>강력 매수</strong> (57명)</p>
+      <p>애널리스트 평균 목표가: <strong>$269.17</strong> (상승여력 <span class='pos'>+29.5%</span>)</p>
+      <p><strong>최근 헤드라인:</strong></p><ul><li>&#x27;Uber won&#x27;: Why Instacart might not stand a chance</li><li>Tech stocks today: AMD earnings buoy chip stocks, Musk-Altman court battle continues</li><li>The space ETFs prepping for liftoff ahead of SpaceX IPO</li><li>AMD stock surges on Q1 earnings, driven by AI demand boom</li><li>Nvidia inks new $500M AI infrastructure deal with Corning</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>AAPL
+        <span class="badge neutral">감성 +0/10 · 중립</span>
+      </h3>
+      <p>애널리스트 의견: <strong>매수</strong> (42명)</p>
+      <p>애널리스트 평균 목표가: <strong>$303.38</strong> (상승여력 <span class='pos'>+5.5%</span>)</p>
+      <p><strong>최근 헤드라인:</strong></p><ul><li>Samsung market cap crosses $1 trillion amid memory chip rally</li><li>The space ETFs prepping for liftoff ahead of SpaceX IPO</li><li>This &quot;Magnificent Seven&quot; Stock Is the Cheapest of Them All. Is It a Buy Right Now?</li><li>Coke Keeps Beating Pepsi. Warren Buffett’s Bet Has Paid Off.</li><li>The Only Fully Integrated U.S. Rare Earth Producer Has a Deal With Apple and the Pentagon. Here&#x27;s What Investors Need to Know.</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>WMT
+        <span class="badge neutral">감성 +1/10 · 중립</span>
+      </h3>
+      <p>애널리스트 의견: <strong>강력 매수</strong> (41명)</p>
+      <p>애널리스트 평균 목표가: <strong>$136.68</strong> (상승여력 <span class='pos'>+5.1%</span>)</p>
+      <p><strong>최근 헤드라인:</strong></p><ul><li>&#x27;Uber won&#x27;: Why Instacart might not stand a chance</li><li>Apple, Nvidia, Broadcom And This Dow Retail Behemoth Fire Up Breakout Watch</li><li>Walmart&#x27;s Chart Shows Buy Signs. Is It A Growth Stock Or A Defensive Play?</li><li>Verneek Bolsters Its Advisory Board</li><li>Maryland is moving to ban companies like Walmart and Kroger from ‘surveillance pricing’ — what it is and how to avoid it</li></ul>
+    </div>
+
+    <div class="card">
+      <h3>LLY
+        <span class="badge neutral">감성 +2/10 · 중립</span>
+      </h3>
+      <p>애널리스트 의견: <strong>매수</strong> (29명)</p>
+      <p>애널리스트 평균 목표가: <strong>$1203.90</strong> (상승여력 <span class='pos'>+22.0%</span>)</p>
+      <p><strong>최근 헤드라인:</strong></p><ul><li>Eli Lilly (LLY) Reports Q1 2026 Revenue Surge of 56% Following FDA Approval of Foundayo</li><li>Eli Lilly Advances As Inflammatory Bowel Disease Drug Reinforces Long-Term Confidence</li><li>Top Research Reports for Eli Lilly, Western Digital &amp; Vertiv</li><li>Eli Lilly Sells $9 Billion of Bonds to Fund Acquisitions</li><li>Novo Nordisk Could Win the Oral GLP-1 Race Against Lilly. Why It Just Raised Guidance.</li></ul>
+    </div>
+
+  <footer>
+    <strong>면책조항:</strong> 본 리포트는 기술적 스크리닝과 자동 뉴스 분석 결과로,
+    투자 자문이 아닙니다. 실제 매매는 본인의 판단과 책임으로 진행하세요.
+    Stop Loss는 -2 ATR, Take Profit은 +3 ATR 기준이며 시장 상황에 따라 조정이 필요할 수 있습니다.
+    <br><br>
+    감성 분석: VADER (헤드라인 기반) · 애널리스트 데이터: Yahoo Finance · 매일 한국시간 오전 7시 자동 업데이트
+  </footer>
+</div>
+</body>
+</html>
